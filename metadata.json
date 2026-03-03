@@ -1,0 +1,5 @@
+{
+  "name": "Compiler Construction Lab",
+  "description": "A comprehensive tool for lexical and syntax analysis, featuring NFA/DFA construction and LR(1) parsing visualization.",
+  "requestFramePermissions": []
+}

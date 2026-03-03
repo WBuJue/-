@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg: #E4E3E0;
+  --ink: #141414;
+  --line: #141414;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+.data-row {
+  display: grid;
+  grid-template-columns: 60px 1.5fr 1fr 1fr;
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+  transition: background 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.data-row:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.col-header {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 11px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.data-value {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.terminal-input {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: var(--font-mono);
+  padding: 1rem;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+}
+
